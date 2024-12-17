@@ -1,5 +1,5 @@
 :root{
-  
+ --primary-color: #6c63ff;
 }
 h1, h2{
   color: #222;
@@ -9,6 +9,7 @@ h1, h2{
 
 h1{
  font-size: 96px; 
+ line-height: 1.5;
 }
 
 h2{
@@ -19,6 +20,7 @@ p{
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 16px;
+  line-height: 30px;
 }
 
 .hero{
@@ -41,11 +43,67 @@ font-family: "Poppins", sans-serif;
 }
 
 .btn-branding{
-  background: #6c63ff;
-  border-radius: 4px;
+  background: var(--primary-color);
+  border-radius: 30px;
   color: white;
   font-size: 18px;
   line-height: 27px;
-  padding: 12px 20px;
+  padding: 18px 27px;
   border: none;
+}
+
+.btn-branding:hover {
+  
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid #6c63ff;
+}
+
+.weather-link{
+  background-color: #6c63ff;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform 0.4s;
+    
+}
+
+.weather-link:hover{
+  transform: scale(1.2);
+  background-color: #fff;
+  color: #6c63ff;
+  border: 1px solid #6c63ff;
+}
+
+.project-description{
+padding: 100px 60px;
+}
+
+.image{
+  background-color: #f9f7fe;
+  padding: 35px 35px 35px 35px;
+}
+.age{
+  position: relative;
+  bottom: 90px;
+}
+
+@media (max-width: 960px){
+
+  h1{
+    font-size: 44px;
+    line-height: 2;
+  }
+  h2{
+    font-size: 44px;
+  }
+  .hero{
+    padding: 80px 20px;
+  }
+  .project-description{
+    padding: 0;
+    text-align: center;
+  }
 }
